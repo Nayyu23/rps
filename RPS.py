@@ -22,6 +22,8 @@ def rps(choice):
 
 window = tk.Tk()
 window.title('Rock Paper Scissors')
+window.geometry('800x800')
+window.resizable(False, False)
 
 canvas = tk.Canvas(
     master=window,
@@ -40,7 +42,7 @@ rock = tk.Button(
     bg='#42CBF5',
     fg='black'
 )
-rock.pack(side=tk.LEFT,expand=1,anchor='ne')
+rock.pack(side=tk.LEFT, expand=True, anchor=tk.CENTER, padx=20, pady=50)
 
 paper = tk.Button(
     master=canvas,
@@ -50,7 +52,7 @@ paper = tk.Button(
     bg='#42CBF5',
     fg='black'
 )
-paper.place(relx=0.5, rely=0.5, anchor=tk.CENTER)
+paper.pack(side=tk.LEFT, expand=True, anchor=tk.CENTER)
 
 scissors = tk.Button(
     master=canvas,
@@ -60,7 +62,9 @@ scissors = tk.Button(
     bg='#42CBF5',
     fg='black'
 )
-scissors.pack(side=tk.LEFT,expand=1,anchor='nw')
+scissors.pack(side=tk.RIGHT, expand=True, anchor=tk.CENTER, padx=20, pady=50)
+
+
 
 
 window.mainloop()

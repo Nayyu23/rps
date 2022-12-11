@@ -64,14 +64,3 @@ scissors.pack(side=tk.LEFT,expand=1,anchor='nw')
 
 
 window.mainloop()
-
-'''
---- TEST ---
-'''
-'''
-while True:
-    x = int(input('Rock (0), Paper (1), Scissors (2): '))
-    if x == 555:
-        break
-    print(rps(x))
-    '''
